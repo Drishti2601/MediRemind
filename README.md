@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# MediRemind: Medication Reminder App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive medication reminder application that helps users track their medication schedule, sends timely notifications, and alerts caregivers if doses are missed. Built for the AlgoArena Hackathon 2025.
 
-## Available Scripts
+## Problem Statement
 
-In the project directory, you can run:
+Medication non-adherence is a significant issue, especially for elderly patients or those with chronic conditions. Missed doses can lead to health complications, reduced treatment effectiveness, and increased healthcare costs. Existing solutions often lack caregiver integration and easy-to-use interfaces for seniors.
 
-### `npm start`
+## Motivation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project was inspired by my grandmother who struggled with managing her multiple medications. Witnessing her challenges firsthand made me realize the need for a more accessible and comprehensive medication management solution, especially for elderly users who may not be tech-savvy. MediRemind aims to solve this problem while providing peace of mind to both patients and their caregivers.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Solution
 
-### `npm test`
+MediRemind addresses these challenges by providing:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Intuitive Medication Tracking**: Simple interface to add and manage medication reminders
+- **Timely Notifications**: Browser notifications when it's time to take medication
+- **Caregiver Alerts**: Notification system for caregivers when doses are missed
+- **Emergency Contact Feature**: Quick access to emergency contacts
+- **Recurring Medication Support**: Set up medications on customizable schedules
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- User authentication with email/password
+- Add medication reminders with name, dosage, and time
+- Mark medications as taken
+- Recurring medication scheduling
+- Caregiver notification system for missed doses
+- Emergency contact feature
+- Password reset functionality
+- Responsive design suitable for mobile and desktop
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend**: React.js, CSS3
+- **Backend**: Firebase Authentication, Firebase Realtime Database
+- **Notifications**: Browser Notifications API
+- **Version Control**: Git/GitHub
 
-### `npm run eject`
+## Installation and Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository: git clone https://github.com/Drishti2601/MediRemind.git
+2. Install dependencies:
+cd MediRemind
+npm install
+3. Create a Firebase project and update the firebase configuration in `src/services/firebase.js`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Run the application: npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Future Enhancements
+- Mobile app using React Native
+- Medication inventory tracking
+- Integration with pharmacies for refill reminders
+- Medication interaction warnings
+- Voice commands for accessibility
